@@ -1,0 +1,31 @@
+.game-object
+  transition: opacity .1s ease-out
+
+.game-object-player
+  transition: .1s linear
+
+.game-object-player,
+.game-object
+  display: table
+  background: #ff8200
+  position: absolute
+  width: 80px
+  height: 80px
+  margin-left: -84px
+  margin-top: -84px
+  border: 2px solid black
+  font: 43px normal sans-serif
+  z-index: 1
+  opacity: 1
+
+  span
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+
+  &.kill
+    opacity: 0
+
+.game-object-player
+  background: #00ca4c
+  z-index: 2
